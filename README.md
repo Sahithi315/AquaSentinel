@@ -15,7 +15,7 @@ Traditional maritime safety equipment (such as AIS, EPIRBs, and high-end sonar/r
 
 ## 🛠️ How It Works (Workflow Pipeline)
 
-1. **Motion Acquisition**: An ultra-affordable **MPU6050** Inertial Measurement Unit (IMU) continuously records 3-axis accelerometer and gyroscope data reflecting the boat's roll, pitch, and yaw.
+1. **Motion Acquisition**: An ultra-affordable **MPU6050** Inertial Measurement Unit (IMU) continuously records 3-axis accelerometer and gyroscope data reflecting the boat's roll and pitch.
 2. **Signal Coordination**: An **Arduino Uno** collects, filters, and formats the raw inertial sensor data.
 3. **Feature Extraction**: Roll/pitch parameters and mathematical metrics are computed over sliding window intervals.
 4. **Anomaly Scoring**: A real-time **Isolation Forest Machine Learning model** profiles the hull dynamics, scoring incoming coordinates to distinguish standard high waves from abnormal movements.
@@ -35,40 +35,6 @@ Traditional maritime safety equipment (such as AIS, EPIRBs, and high-end sonar/r
 * **Scikit-learn**: Houses the unsupervised Isolation Forest anomaly detection algorithm.
 * **Pandas**: Manages real-time data parsing and structured array manipulation.
 * **PySerial**: Integrates serial links between the Arduino and PC terminals.
-
----
-
-## 📂 Repository Structure
-
-```text
-aquasentinel/
-├── assets/
-│   ├── hardware_prototype.jpg        # Floating physical prototype validation
-│   ├── real_time_detection_output.jpg # Isolation Forest model console warnings
-│   ├── system_architecture.png       # Machine Learning signal routing block diagram
-│   └── hero_boat_sunrise.png         # Main landing page visual illustration
-├── index.html                        # Main page markup
-├── style.css                         # CSS Variables, Animations, Grid layouts
-├── script.js                         # Sticky navigation, cost calculators, simulator widget
-└── README.md                         # Project documentation (this file)
-```
-
----
-
-## 🚀 Running the Web Landing Page Locally
-
-You can run a quick local HTTP server in this directory to preview the responsive landing page:
-
-1. Open a terminal inside the project directory:
-   ```bash
-   cd "C:\Users\ds\.gemini\antigravity\scratch\aquasentinel"
-   ```
-2. Start a Python HTTP server:
-   ```bash
-   python -m http.server 8000
-   ```
-3. Open your browser and navigate to:
-   [http://localhost:8000/](http://localhost:8000/)
 
 ---
 
