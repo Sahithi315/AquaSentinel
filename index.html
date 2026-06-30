@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AquaSentinel - A Low-Cost AI-Based Distress Detection System for Small Watercraft, developed by Team Tarani for the SAMA Social Build for Good Hackathon.">
+  <title>AquaSentinel | Intelligent & Affordable Maritime Safety by Team Tarani</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-container">
+    <nav class="navbar" id="navbar">
+      <div class="logo">
+        <a href="#home">
+          <span class="logo-icon"><i class="fa-solid fa-anchor"></i></span>
+          <span class="logo-text">Aqua<span class="highlight">Sentinel</span></span>
+        </a>
+      </div>
+      <div class="nav-toggle" id="nav-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+        <li class="nav-item"><a href="#problem" class="nav-link">Problem</a></li>
+        <li class="nav-item"><a href="#solution" class="nav-link">Solution</a></li>
+        <li class="nav-item"><a href="#technology" class="nav-link">Technology</a></li>
+        <li class="nav-item"><a href="#prototype" class="nav-link">Prototype</a></li>
+        <li class="nav-item"><a href="#future" class="nav-link">Future Scope</a></li>
+        <li class="nav-item"><a href="#team" class="nav-link">Team Tarani</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="hero-bg-overlay"></div>
+    <div class="hero-container container">
+      <div class="hero-content">
+        <div class="badge fade-in">SAMA Social Build for Good Hackathon</div>
+        <h1 class="hero-title fade-in-delay-1">Affordable AI-Powered Safety for Every Small Watercraft</h1>
+        <p class="hero-subtitle fade-in-delay-2">
+          Every day, thousands of fishermen and local boat operators travel across rivers, lakes, and coastal waters without access to advanced safety systems because existing maritime technologies are too expensive. AquaSentinel changes this by providing an intelligent, low-cost distress detection system powered by AI and motion sensors.
+        </p>
+        <div class="hero-ctas fade-in-delay-3">
+          <a href="#solution" class="btn btn-primary">Explore the Solution <i class="fa-solid fa-arrow-right"></i></a>
+          <a href="#prototype" class="btn btn-secondary">View Prototype <i class="fa-solid fa-play"></i></a>
+        </div>
+      </div>
+      <div class="hero-image-wrapper fade-in-delay-3">
+        <div class="glass-frame">
+          <img src="assets/hero_boat_sunrise.png" alt="Fishing boat navigating water at sunrise" class="hero-img">
+        </div>
+      </div>
+    </div>
+    
+    <!-- Hero Stats -->
+    <div class="hero-stats-bar container">
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fa-solid fa-ship"></i></div>
+        <div class="stat-info">
+          <h3 class="stat-title">Designed For</h3>
+          <p class="stat-value" data-target="Fishermen">Fishermen</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fa-solid fa-microchip"></i></div>
+        <div class="stat-info">
+          <h3 class="stat-title">Hardware Cost</h3>
+          <p class="stat-value" data-target="Low-Cost">Low-Cost</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fa-solid fa-brain"></i></div>
+        <div class="stat-info">
+          <h3 class="stat-title">Model Type</h3>
+          <p class="stat-value" data-target="AI-Based">AI-Based</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon"><i class="fa-solid fa-tower-broadcast"></i></div>
+        <div class="stat-info">
+          <h3 class="stat-title">Distress Alerts</h3>
+          <p class="stat-value" data-target="Real-Time">Real-Time</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Animated Wave Divider -->
+    <div class="wave-container">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s58 18 88 18 58-18 88-18 58 18 88 18v44h-352z" />
+        </defs>
+        <g class="wave-parallax">
+          <use href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7)" />
+          <use href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+          <use href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+          <use href="#gentle-wave" x="48" y="7" fill="#ffffff" />
+        </g>
+      </svg>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section section-padding">
+    <div class="container scroll-animate">
+      <div class="section-header centered">
+        <span class="subheading">Our Mission</span>
+        <h2>Democratizing Maritime Safety</h2>
+      </div>
+      <div class="quote-card">
+        <span class="quote-icon"><i class="fa-solid fa-quote-left"></i></span>
+        <blockquote>
+          "Every fisherman deserves access to intelligent safety technology, not just those who can afford expensive maritime systems."
+        </blockquote>
+      </div>
+      <div class="mission-grid">
+        <div class="mission-text-card">
+          <h3>The Humanitarian Calling</h3>
+          <p>
+            Small-scale fishing communities form the backbone of coastal and rural water transport in developing countries. Yet, they are constantly exposed to unpredictable currents, storms, and capsizing risks. Commercial systems cost a fortune. AquaSentinel bridges this massive technology gap by packaging AI-driven motion analysis into an accessible, pocket-friendly device.
+          </p>
+        </div>
+        <div class="mission-focus-card">
+          <h3>Our Target Communities</h3>
+          <div class="target-badges">
+            <span class="target-badge"><i class="fa-solid fa-fish"></i> Small-Scale Fishermen</span>
+            <span class="target-badge"><i class="fa-solid fa-compass"></i> Local Transport Operators</span>
+            <span class="target-badge"><i class="fa-solid fa-umbrella-beach"></i> Tourists & Recreationists</span>
+            <span class="target-badge"><i class="fa-solid fa-life-ring"></i> Coastal Search & Rescue</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Problem Section -->
+  <section id="problem" class="problem-section section-padding">
+    <div class="container scroll-animate">
+      <div class="section-header centered">
+        <span class="subheading">The Challenge</span>
+        <h2>Why Small Boats Remain Vulnerable</h2>
+        <p class="section-description">
+          Traditional maritime search and rescue models are designed for massive container ships and yachts, leaving local operators completely in the dark.
+        </p>
+      </div>
+
+      <div class="problem-grid">
+        <div class="problem-card">
+          <div class="problem-card-icon"><i class="fa-solid fa-sack-xmark"></i></div>
+          <h3>Prohibitive Costs</h3>
+          <p>Commercial safety systems (AIS, EPIRBs, radar) cost tens of thousands of rupees, making them completely unaffordable for low-income local fishermen.</p>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-card-icon"><i class="fa-solid fa-ship"></i></div>
+          <h3>Commercial Bias</h3>
+          <p>Standard marine tech is physically bulky and consumes massive amounts of power, rendering it impractical for installation on small, open wooden boats.</p>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-card-icon"><i class="fa-solid fa-walkie-talkie"></i></div>
+          <h3>Manual Distress Reliance</h3>
+          <p>During a capsize, flooding, or sudden collision, crew members are often incapacitated and cannot make manual radio calls or trigger distress flares.</p>
+        </div>
+
+        <div class="problem-card">
+          <div class="problem-card-icon"><i class="fa-solid fa-hourglass-half"></i></div>
+          <h3>Delayed Rescue Times</h3>
+          <p>Without automated alerts, rescue teams only discover accidents hours or days later, drastically decreasing the survival rate of stranded fishermen.</p>
+        </div>
+
+        <div class="problem-card problem-card-wide">
+          <div class="problem-card-icon"><i class="fa-solid fa-hand-holding-hand"></i></div>
+          <div class="problem-card-content">
+            <h3>Neglected Communities</h3>
+            <p>Rural and coastal watercraft transport networks are vital lifelines. They deserve access to life-saving technology that respects their economic reality. Safety must not be a luxury determined by vessel size.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Solution Section -->
+  <section id="solution" class="solution-section section-padding">
+    <div class="container scroll-animate">
+      <div class="section-header centered">
+        <span class="subheading">Our Innovation</span>
+        <h2>Introducing AquaSentinel</h2>
+        <div class="solution-tagline">
+          <span class="badge badge-pulse">Affordable</span>
+          <span class="badge badge-pulse">Intelligent</span>
+          <span class="badge badge-pulse">Accessible</span>
+          <span class="badge badge-pulse">Scalable</span>
+        </div>
+      </div>
+
+      <div class="solution-content-grid">
+        <div class="solution-features">
+          <div class="sol-feature-item">
+            <span class="sol-feature-num">01</span>
+            <div class="sol-feature-details">
+              <h3>Tailored for Low-Income Owners</h3>
+              <p>Specifically budgeted to allow any boat owner to safeguard their lives without financial strain.</p>
+            </div>
+          </div>
+          <div class="sol-feature-item">
+            <span class="sol-feature-num">02</span>
+            <div class="sol-feature-details">
+              <h3>Low-Cost Sensor Array</h3>
+              <p>Replaces expensive gyro-stabilizers with an ultra-affordable MPU6050 accelerometer and gyroscope.</p>
+            </div>
+          </div>
+          <div class="sol-feature-item">
+            <span class="sol-feature-num">03</span>
+            <div class="sol-feature-details">
+              <h3>Intelligent Motion AI</h3>
+              <p>Runs machine learning classifiers in real-time to distinguish between rough waves and actual capsizing or flooding patterns.</p>
+            </div>
+          </div>
+          <div class="sol-feature-item">
+            <span class="sol-feature-num">04</span>
+            <div class="sol-feature-details">
+              <h3>Modular Expansion</h3>
+              <p>Architected to allow easy integration of GPS localization and GSM/LoRa communication modules for rural networks.</p>
+            </div>
+          </div>
+        </div>
+        <div class="solution-interactive-card">
+          <div class="solution-card-header">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Automated Boat Guard</h3>
+          </div>
+          <p>AquaSentinel acts as a silent observer. Securely mounted to the deck, it evaluates every wave, roll, and pitch. In the event of a critical emergency, it takes immediate action when the crew cannot.</p>
+          <div class="solution-visual">
+            <div class="visual-boat-container">
+              <div class="water-line"></div>
+              <div class="boat-svg">
+                <i class="fa-solid fa-ship"></i>
+              </div>
+            </div>
+            <div class="visual-status-panel">
+              <span class="status-indicator normal" id="sim-status"><i class="fa-solid fa-circle-check"></i> Status: Normal</span>
+            </div>
+            <button class="btn btn-primary btn-sm btn-simulate" id="simulate-distress">Simulate Anomaly</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works-section section-padding">
+    <div class="container scroll-animate">
+      <div class="section-header centered">
+        <span class="subheading">System Architecture</span>
+        <h2>How AquaSentinel Works</h2>
+        <p class="section-description">A robust, lightweight data pipeline designed to operate reliably in harsh aquatic environments.</p>
+      </div>
+
+      <div class="workflow-timeline">
+        
+        <div class="workflow-card">
+          <div class="workflow-icon"><i class="fa-solid fa-gauge-high"></i></div>
+          <h3>MPU6050 Motion Sensor</h3>
+          <p>Continuously records raw 3-axis accelerometer and gyroscope data reflecting the boat's roll, pitch, and yaw dynamics.</p>
+        </div>
+
+        <div class="workflow-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+        <div class="workflow-card">
+          <div class="workflow-icon"><i class="fa-solid fa-microchip"></i></div>
+          <h3>Arduino Uno</h3>
+          <p>Collects, filters, and packages the raw sensor signals, acting as the low-power hardware terminal.</p>
+        </div>
+
+        <div class="workflow-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+        <div class="workflow-card">
+          <div class="workflow-icon"><i class="fa-solid fa-filter"></i></div>
+          <h3>Feature Extraction</h3>
+          <p>Extracts essential mathematical features from sliding window intervals of rolling motion variables.</p>
+        </div>
+
+        <div class="workflow-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+        <div class="workflow-card">
+          <div class="workflow-icon"><i class="fa-solid fa-brain"></i></div>
+          <h3>Isolation Forest ML Model</h3>
+          <p>An unsupervised machine learning model that analyzes spatial coordinates and flags motion outliers (anomalies).</p>
+        </div>
+
+        <div class="workflow-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+        <div class="workflow-card">
+          <div class="workflow-icon"><i class="fa-solid fa-list-check"></i></div>
+          <h3>Decision Logic</h3>
+          <p>Triggers only after 3 consecutive anomalies are identified, minimizing false alerts from normal high-wave impacts.</p>
+        </div>
+
+        <div class="workflow-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+        <div class="workflow-card warning-state">
+          <div class="workflow-icon"><i class="fa-solid fa-bell"></i></div>
+          <h3>Distress Alert</h3>
+          <p>Instantly activates on-board danger alerts, notifying emergency services or neighboring craft.</p>
+        </div>
+
+        <div class="workflow-arrow"><i class="fa-solid fa-chevron-right"></i></div>
+
+        <div class="workflow-card future-state">
+          <div class="workflow-icon"><i class="fa-solid fa-location-crosshairs"></i></div>
+          <h3>Future GPS + GSM</h3>
+          <p>Planned expansion to transmit precise live coordinate notifications via SMS / cellular network infrastructure.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Why AquaSentinel & Cost Comparison -->
+  <section class="comparison-section section-padding">
+    <div class="container scroll-animate">
+      <div class="section-header centered">
+        <span class="subheading">The Comparison</span>
+        <h2>Why AquaSentinel Wins</h2>
+      </div>
+
+      <div class="grid-2">
+        <!-- Side-by-Side Comparison -->
+        <div class="comparison-card-group">
+          <h3>AquaSentinel vs. Traditional Systems</h3>
+          <div class="comparison-table-wrapper">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>Feature</th>
+                  <th>AquaSentinel</th>
+                  <th>Traditional Systems</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Affordability</strong></td>
+                  <td class="text-green"><i class="fa-solid fa-check"></i> Extremely Low Cost</td>
+                  <td class="text-red"><i class="fa-solid fa-xmark"></i> High Cost (Prohibitive)</td>
+                </tr>
+                <tr>
+                  <td><strong>Detection</strong></td>
+                  <td class="text-green"><i class="fa-solid fa-check"></i> AI-Based Anomaly Model</td>
+                  <td class="text-red"><i class="fa-solid fa-xmark"></i> Purely Manual Trigger</td>
+                </tr>
+                <tr>
+                  <td><strong>Weight</strong></td>
+                  <td class="text-green"><i class="fa-solid fa-check"></i> Lightweight & Compact</td>
+                  <td class="text-red"><i class="fa-solid fa-xmark"></i> Heavy / Commercial scale</td>
+                </tr>
+                <tr>
+                  <td><strong>Maintenance</strong></td>
+                  <td class="text-green"><i class="fa-solid fa-check"></i> Low Maintenance</td>
+                  <td class="text-red"><i class="fa-solid fa-xmark"></i> Expensive Upkeep</td>
+                </tr>
+                <tr>
+                  <td><strong>Installation</strong></td>
+                  <td class="text-green"><i class="fa-solid fa-check"></i> Easy (Plug & Play)</td>
+                  <td class="text-red"><i class="fa-solid fa-xmark"></i> Professional Setup Required</td>
+                </tr>
+                <tr>
+                  <td><strong>Community</strong></td>
+                  <td class="text-green"><i class="fa-solid fa-check"></i> Designed for Developing Areas</td>
+                  <td class="text-red"><i class="fa-solid fa-xmark"></i> Commercial Ship Focus</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Cost Comparison Interactive Widget -->
+        <div class="cost-comparison-widget">
+          <h3>Interactive Cost Analysis</h3>
+          <p>Adjust the slider to compare standard safety device expenses against the AquaSentinel prototype.</p>
+          
+          <div class="interactive-slider-container">
+            <div class="slider-labels">
+              <span>Single Unit</span>
+              <span>10 Boat Fleet</span>
+              <span>50 Boat Community</span>
+            </div>
+            <input type="range" min="1" max="3" value="1" class="cost-slider" id="cost-slider">
+          </div>
+
+          <div class="pricing-cards">
+            <div class="pricing-card traditional">
+              <h4>Conventional Systems</h4>
+              <div class="price-value" id="price-traditional">₹30,000</div>
+              <p class="price-detail">Requires external subscriptions & power installs</p>
+            </div>
+            <div class="pricing-card aquasentinel">
+              <h4>AquaSentinel</h4>
+              <div class="price-value" id="price-aqua">₹750</div>
+              <p class="price-detail">One-time cost with locally sourced parts</p>
+            </div>
+          </div>
+
+          <div class="savings-callout">
+            <p class="savings-text">AquaSentinel saves the community approximately <strong id="savings-amount">₹29,250</strong> per deployment!</p>
+          </div>
+
+          <div class="statement-card">
+            <p>"Safety should not be a luxury. AquaSentinel aims to make intelligent boat safety accessible to every fisherman."</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Features Section -->
+  <section class="features-section section-padding">
+    <div class="container scroll-animate">
+      <div class="section-header centered">
+        <span class="subheading">Technical Highlights</span>
+        <h2>Key System Features</h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+          <h3>Low-Cost Safety Solution</h3>
+          <p>Built with budget-friendly components ensuring mass accessibility.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-wave-square"></i></div>
+          <h3>AI-Based Motion Analysis</h3>
+          <p>Unsupervised Machine learning profiles specific hull movements.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+          <h3>Real-Time Distress Detection</h3>
+          <p>Zero lag between critical capsizing motion and threat flagging.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-circle-exclamation"></i></div>
+          <h3>False Alarm Reduction</h3>
+          <p>Intelligent threshold checks prevent triggers from normal sea waves.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-fingerprint"></i></div>
+          <h3>Manual Emergency Button</h3>
+          <p>Bypasses automated AI checks for immediate manual alerts.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-location-dot"></i></div>
+          <h3>Expandable GPS Integration</h3>
+          <p>Ready to log regional latitude and longitude parameters.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-tower-cell"></i></div>
+          <h3>Future GSM Support</h3>
+          <p>Engineered to route distress signals directly to mobile phone towers.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-feather"></i></div>
+          <h3>Lightweight Hardware</h3>
+          <p>Weighs less than 200g, retaining boat stability and center of gravity.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-circle-play"></i></div>
+          <h3>Easy Deployment</h3>
+          <p>Minimal configuration allows instant installation in minutes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Prototype Section -->
+  <section id="prototype" class="prototype-section section-padding">
+    <div class="container scroll-animate">
+      <div class="section-header centered">
+        <span class="subheading">Hardware & Validation</span>
+        <h2>Our Working Prototype</h2>
+        <p class="section-description">A real, functioning distress detection framework built, tested, and validated in active water environments.</p>
+      </div>
+
+      <div class="prototype-gallery">
+        <!-- Card 1 -->
+        <div class="gallery-item">
+          <div class="gallery-img-container">
+            <img src="assets/system_architecture.png" alt="System Architecture Diagram">
+            <div class="gallery-overlay">
+              <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <h3>System Architecture</h3>
+            <p>The signal routing blueprint: from motion tracking (MPU6050) to the Machine Learning decision pipeline.</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="gallery-item">
+          <div class="gallery-img-container">
+            <img src="assets/hardware_prototype.jpg" alt="Hardware Prototype Float Test">
+            <div class="gallery-overlay">
+              <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <h3>Hardware Prototype</h3>
+            <p>Our floating model showing the Arduino Uno and MPU6050 motion logger during active buoyancy trials.</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="gallery-item">
+          <div class="gallery-img-container">
+            <img src="assets/real_time_detection_output.jpg" alt="Real-Time ML Console output showing Anomaly warnings">
+            <div class="gallery-overlay">
+              <span class="zoom-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+          </div>
+          <div class="gallery-info">
+            <h3>Real-Time Detection Output</h3>
+            <p>Console output displaying the Isolation Forest model detecting a sequence of anomalies and flagging danger.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology Stack Section -->
+  <section id="technology" class="tech-section section-padding">
+    <div class="container scroll-animate">
+      <div class="section-header centered">
+        <span class="subheading">Technologies Used</span>
+        <h2>The Engineering Behind It</h2>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech-card">
+          <div class="tech-icon-container"><i class="fa-solid fa-microchip"></i></div>
+          <h3>Arduino Uno</h3>
+          <p>Coordinates high-frequency analog signals from sensor boards.</p>
+          <span class="tech-tag">Hardware Controller</span>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-icon-container"><i class="fa-solid fa-compass"></i></div>
+          <h3>MPU6050</h3>
+          <p>Micro-Electro-Mechanical Systems (MEMS) accelerometer and gyroscope.</p>
+          <span class="tech-tag">Inertial Sensor</span>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-icon-container"><i class="fa-brands fa-python"></i></div>
+          <h3>Python</h3>
+          <p>Hosts the backend modeling, serial communications, and alarm logic.</p>
+          <span class="tech-tag">Development Core</span>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-icon-container"><i class="fa-solid fa-brain"></i></div>
+          <h3>Scikit-learn</h3>
+          <p>Powers the unsupervised anomaly detection models (Isolation Forest).</p>
+          <span class="tech-tag">ML Framework</span>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-icon-container"><i class="fa-solid fa-gears"></i></div>
+          <h3>Isolation Forest</h3>
+          <p>Calculates data point isolation pathways to distinguish waves from capsizes.</p>
+          <span class="tech-tag">Model Architecture</span>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-icon-container"><i class="fa-solid fa-table"></i></div>
+          <h3>Pandas</h3>
+          <p>Handles structured data parsing, windowing, and data manipulation.</p>
+          <span class="tech-tag">Data Engine</span>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-icon-container"><i class="fa-solid fa-network-wired"></i></div>
+          <h3>PySerial</h3>
+          <p>Manages hardware communication link between Arduino and PC terminals.</p>
+          <span class="tech-tag">Communication Link</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Future Scope Section -->
+  <section id="future" class="future-section section-padding">
+    <div class="container scroll-animate">
+      <div class="section-header centered">
+        <span class="subheading">Next Steps</span>
+        <h2>Future Scope & Roadmap</h2>
+        <p class="section-description">How we plan to transition AquaSentinel from a prototype to a global open-source safety standard.</p>
+      </div>
+
+      <div class="future-grid">
+        <div class="future-card">
+          <span class="future-phase">Phase 1</span>
+          <h3>ESP32 Standalone Deployment</h3>
+          <p>Porting the Python AI processing algorithms directly onto a low-power ESP32 microcontroller with built-in Wi-Fi and Bluetooth.</p>
+        </div>
+
+        <div class="future-card">
+          <span class="future-phase">Phase 2</span>
+          <h3>GPS Tracking System</h3>
+          <p>Integrating compact, low-cost GPS chips (like NEO-6M) to enable automated real-time latitude/longitude packet logging.</p>
+        </div>
+
+        <div class="future-card">
+          <span class="future-phase">Phase 3</span>
+          <h3>GSM Emergency Alerts</h3>
+          <p>Wiring SIM800L modules to instantly route automated SOS coordinates to coastguard services or families via SMS.</p>
+        </div>
+
+        <div class="future-card">
+          <span class="future-phase">Phase 4</span>
+          <h3>Mobile Companion App</h3>
+          <p>A companion application allowing families to monitor the safety status and location track their boat fleets.</p>
+        </div>
+
+        <div class="future-card">
+          <span class="future-phase">Phase 5</span>
+          <h3>Cloud Safety Dashboard</h3>
+          <p>An administrative web portal for regional authorities to visualize real-time boat telemetry and trigger rescue operations.</p>
+        </div>
+
+        <div class="future-card">
+          <span class="future-phase">Phase 6</span>
+          <h3>Solar-Powered Rigging</h3>
+          <p>Equipping the hull-mounted housing with micro solar panels, rendering the system self-sustaining and off-grid.</p>
+        </div>
+
+        <div class="future-card future-card-wide">
+          <span class="future-phase">Phase 7</span>
+          <div class="wide-content">
+            <h3>Community-Led Search & Rescue Network</h3>
+            <p>Creating regional mesh networks using LoRa technology, enabling fishing fleets to form a collaborative rescue network where boats automatically relay emergency location data between each other in zones with no cell coverage.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet Team Tarani Section -->
+  <section id="team" class="team-section section-padding">
+    <div class="container scroll-animate">
+      <div class="section-header centered">
+        <span class="subheading">The Creators</span>
+        <h2>Meet Team Tarani</h2>
+      </div>
+
+      <div class="team-grid">
+        <!-- Sahithi Kona -->
+        <div class="team-card">
+          <div class="team-avatar">
+            <i class="fa-solid fa-user-gear"></i>
+          </div>
+          <h3>Sahithi Kona</h3>
+          <span class="team-institution">R V College of Engineering</span>
+        </div>
+
+        <!-- Sahana Krishnamani -->
+        <div class="team-card">
+          <div class="team-avatar">
+            <i class="fa-solid fa-user-gear"></i>
+          </div>
+          <h3>Sahana Krishnamani</h3>
+          <span class="team-institution">R V College of Engineering</span>
+        </div>
+
+        <!-- Samartha R Jamadhagni -->
+        <div class="team-card">
+          <div class="team-avatar">
+            <i class="fa-solid fa-user-gear"></i>
+          </div>
+          <h3>Samartha R Jamadhagni</h3>
+          <span class="team-institution">R V College of Engineering</span>
+        </div>
+      </div>
+
+      <div class="team-extra centered">
+        <p class="dept">Department of Computer Science and Engineering</p>
+        <p class="college">R V College of Engineering, Bengaluru, India</p>
+
+        <div class="why-tarani-card">
+          <h4>Why Team Tarani?</h4>
+          <blockquote>
+            "Tarani symbolizes a boat that safely carries people across water. Our team believes that technology should empower communities by making life-saving innovations affordable and accessible to everyone."
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col brand-col">
+          <div class="footer-logo">
+            <span class="logo-icon"><i class="fa-solid fa-anchor"></i></span>
+            <span class="logo-text">Aqua<span class="highlight">Sentinel</span></span>
+          </div>
+          <p class="footer-tagline">Making maritime safety accessible through low-cost, AI-powered hardware.</p>
+        </div>
+
+        <div class="footer-col links-col">
+          <h4>Project Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#problem">Problem</a></li>
+            <li><a href="#solution">Solution</a></li>
+            <li><a href="#technology">Technology</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col links-col">
+          <h4>Development</h4>
+          <ul>
+            <li><a href="#prototype">Prototype</a></li>
+            <li><a href="#future">Future Scope</a></li>
+            <li><a href="#team">Team Tarani</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col info-col">
+          <h4>Attribution</h4>
+          <p class="footer-award"><i class="fa-solid fa-trophy"></i> Developed for SAMA Social Build for Good Hackathon</p>
+          <p class="footer-college">R V College of Engineering, Bengaluru</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Team Tarani. All rights reserved. Developed with safety in mind.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Overlay for Image Gallery -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
